@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #3E6B4F;
+  --primary-hover: #567F62;
+  --secondary-color: #B5A99A;
+  --bg-color: #DAD2C8;
+  --card-bg: #F1ECE6;
+  --text-primary: #1F1F1A;
+  --text-secondary: #8D8C87;
+  --border-color: #B5A99A;
+  --danger-color: #b84040;
+  --success-color: #3E6B4F;
+  --warning-color: #f59e0b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text-primary);
+  background: var(--bg-color);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(62, 107, 79, 0.2);
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
